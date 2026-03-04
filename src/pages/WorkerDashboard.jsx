@@ -4,6 +4,8 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import { QRCodeSVG } from 'qrcode.react';
 import transactions from '../data/mockTransactions.json';
 import { calculateGigScore } from '../utils/gigEngine';
+import { getWorkerProfile, setWorkerProfile } from '../services/firestore';
+import { useAuth } from '../services/AuthContext.jsx';
 
 // ─── Animated Score Counter ────────────────────────────────────────────────
 function AnimatedScore({ targetScore }) {
@@ -81,23 +83,99 @@ export default function WorkerDashboard() {
   const navigate = useNavigate();
   const [scoreData, setScoreData] = useState(null);
   const [loading, setLoading] = useState(true);
-
-  const FIREBASE_DOC_ID = 'user_123_gig_profile';
-  const WORKER_NAME = 'Ravi Kumar';
+  const [profile, setProfile] = useState(null);
+  const { user, account, accountLoading } = useAuth();
+  const docId = user?.uid;
 
   useEffect(() => {
-    // Simulate async fetch + calculation
+    if (!user || (account && account.role !== 'worker')) {
+      setLoading(false);
+      return;
+    }
     setTimeout(() => {
       const result = calculateGigScore(transactions);
       setScoreData(result);
+      (async () => {
+        try {
+          const existing = await getWorkerProfile(docId);
+          const baseProfile = {
+            name: existing?.name || user.displayName || user.email || 'Worker',
+            platform: existing?.platform || 'Zomato / Swiggy / Zepto',
+            city: existing?.city || 'Mumbai, MH',
+            joinedDays: existing?.joinedDays || 90,
+          };
+          setProfile(baseProfile);
+          await setWorkerProfile(docId, {
+            ...baseProfile,
+            score: result.score,
+            avgMonthlyGigIncome: result.avgMonthlyGigIncome,
+            burnRate: result.burnRate,
+            gigDaysActive: result.gigDays,
+          });
+        } catch (e) {}
+      })();
       setLoading(false);
     }, 900);
-  }, []);
+  }, [user, account, docId]);
 
   const tierColor =
     scoreData?.tier === 'APPROVED' ? '#00FFD1' :
     scoreData?.tier === 'CONDITIONAL' ? '#F59E0B' :
     '#EF4444';
+
+  if (!user || accountLoading) {
+    return (
+      <div
+        className="min-h-screen flex flex-col items-center justify-center py-8 px-4"
+        style={{
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(0,255,209,0.05) 0%, #030508 60%)',
+          minHeight: '100vh',
+        }}
+      >
+        <div className="glass rounded-2xl p-6 text-center max-w-sm">
+          <div className="font-display font-bold text-xl mb-2 text-white">
+            {user ? 'Loading account' : 'Sign in required'}
+          </div>
+          <div className="font-body text-white/50 text-sm mb-4">
+            {user ? 'Fetching your access details.' : 'Sign in to generate your verified gig passport.'}
+          </div>
+          <button
+            onClick={() => navigate('/')}
+            className="px-5 py-2 rounded-full text-sm font-body font-semibold transition-all duration-200"
+            style={{ background: '#00FFD1', color: '#030508' }}
+          >
+            Go to sign in
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (account && account.role !== 'worker') {
+    return (
+      <div
+        className="min-h-screen flex flex-col items-center justify-center py-8 px-4"
+        style={{
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(0,255,209,0.05) 0%, #030508 60%)',
+          minHeight: '100vh',
+        }}
+      >
+        <div className="glass rounded-2xl p-6 text-center max-w-sm">
+          <div className="font-display font-bold text-xl mb-2 text-white">Worker access only</div>
+          <div className="font-body text-white/50 text-sm mb-4">
+            You are signed in as a lender account.
+          </div>
+          <button
+            onClick={() => navigate('/lender')}
+            className="px-5 py-2 rounded-full text-sm font-body font-semibold transition-all duration-200"
+            style={{ background: '#7B61FF', color: '#030508' }}
+          >
+            Go to lender portal
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -153,9 +231,11 @@ export default function WorkerDashboard() {
             )}
           </div>
           <h2 className="font-display font-bold text-2xl text-white mt-3" style={{ letterSpacing: '-0.03em' }}>
-            {WORKER_NAME}
+            {profile?.name || user?.email}
           </h2>
-          <p className="font-body text-white/40 text-sm mt-0.5">Delivery Partner · Mumbai</p>
+          <p className="font-body text-white/40 text-sm mt-0.5">
+            {(profile?.platform || 'Delivery Partner') + ' · ' + (profile?.city || 'City')}
+          </p>
         </div>
 
         {/* Score area */}
@@ -229,14 +309,14 @@ export default function WorkerDashboard() {
             style={{ background: '#fff' }}
           >
             <QRCodeSVG
-              value={FIREBASE_DOC_ID}
+              value={docId}
               size={140}
               fgColor="#030508"
               bgColor="#ffffff"
               level="H"
             />
           </motion.div>
-          <p className="font-mono text-xs text-white/20 mt-3 tracking-wider">{FIREBASE_DOC_ID}</p>
+          <p className="font-mono text-xs text-white/20 mt-3 tracking-wider">{docId}</p>
         </div>
 
         {/* Footer strip */}

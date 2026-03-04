@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { useAuth } from '../services/AuthContext.jsx';
+import { signInWithEmailPassword, signUpWithEmailPassword, signOutFirebase } from '../services/auth.js';
+import { getUserAccount, setUserAccount } from '../services/firestore';
 
 // ─── Cinematic Intro Overlay ────────────────────────────────────────────────
 function CinematicIntro({ onComplete }) {
@@ -72,6 +75,7 @@ function CinematicIntro({ onComplete }) {
 // ─── Navbar ──────────────────────────────────────────────────────────────────
 function Navbar() {
   const navigate = useNavigate();
+  const { user, account } = useAuth();
   return (
     <motion.nav
       initial={{ opacity: 0, y: -20 }}
@@ -89,6 +93,19 @@ function Navbar() {
           <span className="font-display font-bold text-lg tracking-tight">GIG Flow</span>
         </div>
         <div className="flex items-center gap-3">
+          {user && (
+            <>
+              <span className="font-mono text-xs text-white/60">
+                {(account?.role ? account.role + ' · ' : '') + (user.email || '')}
+              </span>
+              <button
+                onClick={signOutFirebase}
+                className="px-4 py-2 rounded-full text-sm font-body font-medium border border-white/20 text-white/70 hover:border-white/40 hover:text-white transition-all duration-200"
+              >
+                Sign out
+              </button>
+            </>
+          )}
           <button
             onClick={() => navigate('/lender')}
             className="px-5 py-2 rounded-full text-sm font-body font-medium border border-white/20 text-white/70 hover:border-white/40 hover:text-white transition-all duration-200"
@@ -108,8 +125,117 @@ function Navbar() {
   );
 }
 
+function AuthCard({ role, title, accent, onSignedIn, user, account, accountLoading }) {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+
+  const handleSignIn = async () => {
+    setLoading(true);
+    setError('');
+    try {
+      const u = await signInWithEmailPassword(email, password);
+      const acc = await getUserAccount(u.uid);
+      if (!acc || acc.role !== role) {
+        await signOutFirebase();
+        setError('Account role mismatch');
+        return;
+      }
+      setEmail('');
+      setPassword('');
+      onSignedIn(role);
+    } catch (e) {
+      setError('Invalid credentials');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSignUp = async () => {
+    setLoading(true);
+    setError('');
+    try {
+      const u = await signUpWithEmailPassword(email, password);
+      await setUserAccount(u.uid, { role, email: u.email });
+      setEmail('');
+      setPassword('');
+      onSignedIn(role);
+    } catch (e) {
+      setError('Unable to sign up');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const isThisRole = user && account && account.role === role;
+  const isOtherRole = user && account && account.role !== role;
+
+  return (
+    <div className="glass rounded-2xl p-6 flex-1 min-w-[260px]" style={{ border: `1px solid ${accent}22` }}>
+      <div className="font-mono text-xs tracking-widest mb-2" style={{ color: accent }}>
+        {title}
+      </div>
+      {accountLoading && user ? (
+        <div className="text-white/40 text-sm">Loading...</div>
+      ) : isThisRole ? (
+        <div>
+          <div className="text-white/70 text-sm mb-4">Signed in as {user.email}</div>
+          <button
+            onClick={() => onSignedIn(role)}
+            className="w-full px-4 py-2 rounded-lg text-sm font-semibold"
+            style={{ background: accent, color: '#030508' }}
+          >
+            Continue
+          </button>
+        </div>
+      ) : (
+        <div>
+          {isOtherRole && (
+            <div className="text-xs text-red-400 mb-2">Signed in as {account.role}</div>
+          )}
+          <input
+            className="w-full mb-2 px-3 py-2 rounded-lg bg-transparent border border-white/10 text-sm text-white placeholder-white/30"
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            className="w-full mb-2 px-3 py-2 rounded-lg bg-transparent border border-white/10 text-sm text-white placeholder-white/30"
+            type="password"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {error && <div className="text-xs text-red-400 mb-2">{error}</div>}
+          <div className="flex gap-2">
+            <button
+              onClick={handleSignIn}
+              disabled={loading}
+              className="flex-1 px-3 py-2 rounded-lg text-sm"
+              style={{ background: accent, color: '#030508' }}
+            >
+              {loading ? '...' : 'Sign in'}
+            </button>
+            <button
+              onClick={handleSignUp}
+              disabled={loading}
+              className="flex-1 px-3 py-2 rounded-lg text-sm border border-white/10 text-white/80"
+            >
+              {loading ? '...' : 'Sign up'}
+            </button>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+
 // ─── Hero Section ─────────────────────────────────────────────────────────────
 function HeroSection() {
+  const navigate = useNavigate();
+  const { user, account, accountLoading } = useAuth();
   return (
     <section className="relative min-h-screen flex items-end pb-24 px-8 md:px-16 overflow-hidden">
       {/* Animated gradient background */}
@@ -201,6 +327,26 @@ function HeroSection() {
               Zero Paper Required
             </div>
           </motion.div>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+            <AuthCard
+              role="worker"
+              title="WORKER ACCESS"
+              accent="#00FFD1"
+              onSignedIn={() => navigate('/worker')}
+              user={user}
+              account={account}
+              accountLoading={accountLoading}
+            />
+            <AuthCard
+              role="lender"
+              title="LENDER ACCESS"
+              accent="#7B61FF"
+              onSignedIn={() => navigate('/lender')}
+              user={user}
+              account={account}
+              accountLoading={accountLoading}
+            />
+          </div>
         </motion.div>
       </div>
 

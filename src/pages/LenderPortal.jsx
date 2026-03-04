@@ -1,22 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { calculateGigScore } from "../utils/gigEngine";
-import transactions from "../data/mockTransactions.json";
-
-const DOC_ID = "user_123_gig_profile";
-
-function mockFetchWorkerData(docId) {
-  const result = calculateGigScore(transactions);
-  return {
-    docId,
-    name: "Rajan Kumar",
-    platform: "Zomato / Swiggy / Zepto",
-    city: "Bengaluru, KA",
-    joinedDays: 90,
-    ...result,
-  };
-}
+import { getWorkerProfile, getWorkersStats } from "../services/firestore";
+import { useAuth } from "../services/AuthContext.jsx";
 
 function getDecision(score, avgMonthlyGigIncome) {
   if (score > 700) {
@@ -112,15 +98,52 @@ export default function LenderPortal() {
   const [scanning, setScanning] = useState(false);
   const [worker, setWorker] = useState(null);
   const [scanPhase, setScanPhase] = useState("idle"); // idle | scanning | found | loaded
+  const [docId, setDocId] = useState("");
+  const [activeDocId, setActiveDocId] = useState("");
+  const [error, setError] = useState("");
+  const [stats, setStats] = useState(null);
+  const { user, account, accountLoading } = useAuth();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!user || (account && account.role !== "lender")) {
+      return;
+    }
+    (async () => {
+      try {
+        const data = await getWorkersStats();
+        setStats(data);
+      } catch (e) {
+        setStats({ count: 0, avgScore: 0, approvalRate: 0, avgMonthlyIncome: 0 });
+      }
+    })();
+  }, [user, account]);
 
   const handleScan = () => {
+    const trimmed = docId.trim();
+    if (!trimmed) {
+      setError("Enter passport id");
+      return;
+    }
+    setError("");
     setScanPhase("scanning");
     setScanning(true);
+    setActiveDocId(trimmed);
 
     setTimeout(() => setScanPhase("found"), 1200);
-    setTimeout(() => {
-      const data = mockFetchWorkerData(DOC_ID);
-      setWorker(data);
+    setTimeout(async () => {
+      try {
+        const profile = await getWorkerProfile(trimmed);
+        if (!profile) {
+          setWorker(null);
+          setError("Profile not found");
+        } else {
+          setWorker(profile);
+        }
+      } catch (e) {
+        setWorker(null);
+        setError("Unable to fetch profile");
+      }
       setScanPhase("loaded");
       setScanning(false);
     }, 2200);
@@ -129,9 +152,52 @@ export default function LenderPortal() {
   const reset = () => {
     setWorker(null);
     setScanPhase("idle");
+    setError("");
   };
 
   const decision = worker ? getDecision(worker.score, worker.avgMonthlyGigIncome) : null;
+
+  if (!user || accountLoading) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center py-8 px-4" style={{ background: "#0A0A0F" }}>
+        <div className="glass rounded-2xl p-6 text-center max-w-sm">
+          <div className="font-display font-bold text-xl mb-2 text-white">
+            {user ? "Loading account" : "Sign in required"}
+          </div>
+          <div className="font-body text-white/50 text-sm mb-4">
+            {user ? "Fetching your access details." : "Sign in to access lender tools."}
+          </div>
+          <button
+            onClick={() => navigate("/")}
+            className="px-5 py-2 rounded-full text-sm font-body font-semibold transition-all duration-200"
+            style={{ background: "#7B61FF", color: "#030508" }}
+          >
+            Go to sign in
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (account && account.role !== "lender") {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center py-8 px-4" style={{ background: "#0A0A0F" }}>
+        <div className="glass rounded-2xl p-6 text-center max-w-sm">
+          <div className="font-display font-bold text-xl mb-2 text-white">Lender access only</div>
+          <div className="font-body text-white/50 text-sm mb-4">
+            You are signed in as a worker account.
+          </div>
+          <button
+            onClick={() => navigate("/worker")}
+            className="px-5 py-2 rounded-full text-sm font-body font-semibold transition-all duration-200"
+            style={{ background: "#00FFD1", color: "#030508" }}
+          >
+            Go to worker dashboard
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex" style={{ background: "#0A0A0F", minHeight: "100vh" }}>
@@ -158,10 +224,10 @@ export default function LenderPortal() {
         {/* Metrics bar */}
         <div className="grid grid-cols-4 gap-4 mb-10">
           {[
-            { label: "Total Assessed", value: "1,284", delta: "+12 today" },
-            { label: "Approval Rate", value: "68.4%", delta: "+2.1%" },
-            { label: "Avg Score", value: "712", delta: "Prime tier" },
-            { label: "Active Loans", value: "₹4.2Cr", delta: "Performing" },
+            { label: "Profiles", value: stats?.count ?? 0, delta: "All time" },
+            { label: "Approval Rate", value: `${stats?.approvalRate ?? 0}%`, delta: "Score > 700" },
+            { label: "Avg Score", value: stats?.avgScore ?? 0, delta: "Current" },
+            { label: "Avg Income", value: `₹${(stats?.avgMonthlyIncome ?? 0).toLocaleString("en-IN")}`, delta: "Monthly" },
           ].map(({ label, value, delta }) => (
             <div key={label} className="rounded-2xl p-5"
               style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -225,7 +291,7 @@ export default function LenderPortal() {
                     className="text-center">
                     <motion.div className="text-4xl mb-2" animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 0.5 }}>✓</motion.div>
                     <p className="text-xs" style={{ color: "#00FFD1", fontFamily: "monospace" }}>Passport Found</p>
-                    <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "monospace" }}>{DOC_ID}</p>
+                    <p className="text-xs text-gray-500 mt-1" style={{ fontFamily: "monospace" }}>{activeDocId}</p>
                   </motion.div>
                 )}
                 {scanPhase === "loaded" && (
@@ -237,6 +303,18 @@ export default function LenderPortal() {
                 )}
               </AnimatePresence>
             </div>
+
+            <input
+              className="w-full mb-3 px-3 py-2 rounded-xl bg-transparent border border-white/10 text-sm text-white placeholder-gray-600"
+              placeholder="Enter passport id"
+              value={docId}
+              onChange={(e) => setDocId(e.target.value)}
+            />
+            {error && (
+              <div className="text-xs text-red-400 mb-3" style={{ fontFamily: "monospace" }}>
+                {error}
+              </div>
+            )}
 
             {scanPhase === "idle" ? (
               <button
