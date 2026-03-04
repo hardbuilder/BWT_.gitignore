@@ -1,0 +1,1927 @@
+[
+  {
+    "id": "TXN0001",
+    "date": "2024-09-01",
+    "amount": 674,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0002",
+    "date": "2024-09-01",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0003",
+    "date": "2024-09-01",
+    "amount": 254,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0004",
+    "date": "2024-09-01",
+    "amount": 500,
+    "narration": "OPENING-BALANCE-CREDIT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0005",
+    "date": "2024-09-02",
+    "amount": 305,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0006",
+    "date": "2024-09-02",
+    "amount": 299,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0007",
+    "date": "2024-09-02",
+    "amount": 455,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0008",
+    "date": "2024-09-02",
+    "amount": 367,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0009",
+    "date": "2024-09-02",
+    "amount": 61,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0010",
+    "date": "2024-09-03",
+    "amount": 1691,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0011",
+    "date": "2024-09-03",
+    "amount": 36,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0012",
+    "date": "2024-09-03",
+    "amount": 98,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0013",
+    "date": "2024-09-03",
+    "amount": 442,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0014",
+    "date": "2024-09-04",
+    "amount": 445,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0015",
+    "date": "2024-09-04",
+    "amount": 1516,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0016",
+    "date": "2024-09-04",
+    "amount": 655,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0017",
+    "date": "2024-09-04",
+    "amount": 654,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0018",
+    "date": "2024-09-05",
+    "amount": 671,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0019",
+    "date": "2024-09-05",
+    "amount": 740,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0020",
+    "date": "2024-09-05",
+    "amount": 489,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0021",
+    "date": "2024-09-06",
+    "amount": 1535,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0022",
+    "date": "2024-09-06",
+    "amount": 240,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0023",
+    "date": "2024-09-06",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0024",
+    "date": "2024-09-06",
+    "amount": 30,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0025",
+    "date": "2024-09-07",
+    "amount": 863,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0026",
+    "date": "2024-09-07",
+    "amount": 208,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0027",
+    "date": "2024-09-08",
+    "amount": 1479,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0028",
+    "date": "2024-09-08",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0029",
+    "date": "2024-09-08",
+    "amount": 688,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0030",
+    "date": "2024-09-09",
+    "amount": 450,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0031",
+    "date": "2024-09-09",
+    "amount": 277,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0032",
+    "date": "2024-09-09",
+    "amount": 208,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0033",
+    "date": "2024-09-09",
+    "amount": 219,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0034",
+    "date": "2024-09-10",
+    "amount": 104,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0035",
+    "date": "2024-09-10",
+    "amount": 531,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0036",
+    "date": "2024-09-11",
+    "amount": 198,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0037",
+    "date": "2024-09-11",
+    "amount": 57,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0038",
+    "date": "2024-09-12",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0039",
+    "date": "2024-09-12",
+    "amount": 577,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0040",
+    "date": "2024-09-13",
+    "amount": 329,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0041",
+    "date": "2024-09-13",
+    "amount": 1911,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0042",
+    "date": "2024-09-13",
+    "amount": 337,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0043",
+    "date": "2024-09-13",
+    "amount": 255,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0044",
+    "date": "2024-09-14",
+    "amount": 256,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0045",
+    "date": "2024-09-14",
+    "amount": 1585,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0046",
+    "date": "2024-09-14",
+    "amount": 348,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0047",
+    "date": "2024-09-14",
+    "amount": 264,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0048",
+    "date": "2024-09-14",
+    "amount": 516,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0049",
+    "date": "2024-09-15",
+    "amount": 355,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0050",
+    "date": "2024-09-15",
+    "amount": 87,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0051",
+    "date": "2024-09-15",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0052",
+    "date": "2024-09-16",
+    "amount": 197,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0053",
+    "date": "2024-09-16",
+    "amount": 657,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0054",
+    "date": "2024-09-17",
+    "amount": 516,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0055",
+    "date": "2024-09-17",
+    "amount": 77,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0056",
+    "date": "2024-09-17",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0057",
+    "date": "2024-09-17",
+    "amount": 97,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0058",
+    "date": "2024-09-18",
+    "amount": 262,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0059",
+    "date": "2024-09-18",
+    "amount": 165,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0060",
+    "date": "2024-09-18",
+    "amount": 51,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0061",
+    "date": "2024-09-19",
+    "amount": 503,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0062",
+    "date": "2024-09-19",
+    "amount": 1712,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0063",
+    "date": "2024-09-19",
+    "amount": 461,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0064",
+    "date": "2024-09-19",
+    "amount": 35,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0065",
+    "date": "2024-09-20",
+    "amount": 360,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0066",
+    "date": "2024-09-20",
+    "amount": 583,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0067",
+    "date": "2024-09-20",
+    "amount": 98,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0068",
+    "date": "2024-09-21",
+    "amount": 351,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0069",
+    "date": "2024-09-21",
+    "amount": 356,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0070",
+    "date": "2024-09-21",
+    "amount": 206,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0071",
+    "date": "2024-09-21",
+    "amount": 766,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0072",
+    "date": "2024-09-22",
+    "amount": 332,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0073",
+    "date": "2024-09-22",
+    "amount": 526,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0074",
+    "date": "2024-09-22",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0075",
+    "date": "2024-09-22",
+    "amount": 100,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0076",
+    "date": "2024-09-23",
+    "amount": 257,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0077",
+    "date": "2024-09-23",
+    "amount": 457,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0078",
+    "date": "2024-09-23",
+    "amount": 331,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0079",
+    "date": "2024-09-23",
+    "amount": 81,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0080",
+    "date": "2024-09-24",
+    "amount": 299,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0081",
+    "date": "2024-09-24",
+    "amount": 46,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0082",
+    "date": "2024-09-24",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0083",
+    "date": "2024-09-24",
+    "amount": 1278,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0084",
+    "date": "2024-09-25",
+    "amount": 516,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0085",
+    "date": "2024-09-25",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0086",
+    "date": "2024-09-25",
+    "amount": 337,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0087",
+    "date": "2024-09-26",
+    "amount": 62,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0088",
+    "date": "2024-09-27",
+    "amount": 341,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0089",
+    "date": "2024-09-27",
+    "amount": 72,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0090",
+    "date": "2024-09-27",
+    "amount": 272,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0091",
+    "date": "2024-09-28",
+    "amount": 301,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0092",
+    "date": "2024-09-28",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0093",
+    "date": "2024-09-29",
+    "amount": 186,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0094",
+    "date": "2024-09-29",
+    "amount": 442,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0095",
+    "date": "2024-09-30",
+    "amount": 428,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0096",
+    "date": "2024-09-30",
+    "amount": 253,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0097",
+    "date": "2024-10-01",
+    "amount": 213,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0098",
+    "date": "2024-10-01",
+    "amount": 314,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0099",
+    "date": "2024-10-01",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0100",
+    "date": "2024-10-01",
+    "amount": 36,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0101",
+    "date": "2024-10-01",
+    "amount": 298,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0102",
+    "date": "2024-10-02",
+    "amount": 595,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0103",
+    "date": "2024-10-02",
+    "amount": 141,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0104",
+    "date": "2024-10-02",
+    "amount": 688,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0105",
+    "date": "2024-10-03",
+    "amount": 321,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0106",
+    "date": "2024-10-03",
+    "amount": 811,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0107",
+    "date": "2024-10-03",
+    "amount": 487,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0108",
+    "date": "2024-10-03",
+    "amount": 153,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0109",
+    "date": "2024-10-04",
+    "amount": 2365,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0110",
+    "date": "2024-10-04",
+    "amount": 334,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0111",
+    "date": "2024-10-05",
+    "amount": 1346,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0112",
+    "date": "2024-10-05",
+    "amount": 450,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0113",
+    "date": "2024-10-05",
+    "amount": 578,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0114",
+    "date": "2024-10-05",
+    "amount": 838,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0115",
+    "date": "2024-10-06",
+    "amount": 386,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0116",
+    "date": "2024-10-06",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0117",
+    "date": "2024-10-06",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0118",
+    "date": "2024-10-07",
+    "amount": 377,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0119",
+    "date": "2024-10-07",
+    "amount": 413,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0120",
+    "date": "2024-10-07",
+    "amount": 391,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0121",
+    "date": "2024-10-08",
+    "amount": 255,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0122",
+    "date": "2024-10-08",
+    "amount": 1155,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0123",
+    "date": "2024-10-08",
+    "amount": 457,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0124",
+    "date": "2024-10-08",
+    "amount": 151,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0125",
+    "date": "2024-10-09",
+    "amount": 2348,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0126",
+    "date": "2024-10-09",
+    "amount": 462,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0127",
+    "date": "2024-10-09",
+    "amount": 632,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0128",
+    "date": "2024-10-10",
+    "amount": 393,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0129",
+    "date": "2024-10-10",
+    "amount": 235,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0130",
+    "date": "2024-10-10",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0131",
+    "date": "2024-10-11",
+    "amount": 292,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0132",
+    "date": "2024-10-11",
+    "amount": 153,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0133",
+    "date": "2024-10-11",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0134",
+    "date": "2024-10-11",
+    "amount": 551,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0135",
+    "date": "2024-10-12",
+    "amount": 420,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0136",
+    "date": "2024-10-12",
+    "amount": 291,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0137",
+    "date": "2024-10-12",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0138",
+    "date": "2024-10-13",
+    "amount": 1557,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0139",
+    "date": "2024-10-13",
+    "amount": 261,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0140",
+    "date": "2024-10-13",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0141",
+    "date": "2024-10-14",
+    "amount": 247,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0142",
+    "date": "2024-10-15",
+    "amount": 524,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0143",
+    "date": "2024-10-15",
+    "amount": 336,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0144",
+    "date": "2024-10-15",
+    "amount": 88,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0145",
+    "date": "2024-10-16",
+    "amount": 310,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0146",
+    "date": "2024-10-16",
+    "amount": 124,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0147",
+    "date": "2024-10-16",
+    "amount": 73,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0148",
+    "date": "2024-10-17",
+    "amount": 100,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0149",
+    "date": "2024-10-17",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0150",
+    "date": "2024-10-18",
+    "amount": 299,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0151",
+    "date": "2024-10-19",
+    "amount": 425,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0152",
+    "date": "2024-10-19",
+    "amount": 285,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0153",
+    "date": "2024-10-19",
+    "amount": 406,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0154",
+    "date": "2024-10-20",
+    "amount": 426,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0155",
+    "date": "2024-10-20",
+    "amount": 296,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0156",
+    "date": "2024-10-20",
+    "amount": 861,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0157",
+    "date": "2024-10-20",
+    "amount": 47,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0158",
+    "date": "2024-10-21",
+    "amount": 336,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0159",
+    "date": "2024-10-21",
+    "amount": 195,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0160",
+    "date": "2024-10-21",
+    "amount": 550,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0161",
+    "date": "2024-10-22",
+    "amount": 840,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0162",
+    "date": "2024-10-22",
+    "amount": 1738,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0163",
+    "date": "2024-10-22",
+    "amount": 58,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0164",
+    "date": "2024-10-22",
+    "amount": 60,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0165",
+    "date": "2024-10-23",
+    "amount": 58,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0166",
+    "date": "2024-10-24",
+    "amount": 318,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0167",
+    "date": "2024-10-24",
+    "amount": 666,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0168",
+    "date": "2024-10-24",
+    "amount": 816,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0169",
+    "date": "2024-10-24",
+    "amount": 37,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0170",
+    "date": "2024-10-24",
+    "amount": 502,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0171",
+    "date": "2024-10-25",
+    "amount": 281,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0172",
+    "date": "2024-10-25",
+    "amount": 209,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0173",
+    "date": "2024-10-25",
+    "amount": 479,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0174",
+    "date": "2024-10-26",
+    "amount": 512,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0175",
+    "date": "2024-10-26",
+    "amount": 14,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0176",
+    "date": "2024-10-27",
+    "amount": 27,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0177",
+    "date": "2024-10-27",
+    "amount": 45,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0178",
+    "date": "2024-10-27",
+    "amount": 76,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0179",
+    "date": "2024-10-28",
+    "amount": 219,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0180",
+    "date": "2024-10-28",
+    "amount": 311,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0181",
+    "date": "2024-10-28",
+    "amount": 50,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0182",
+    "date": "2024-10-29",
+    "amount": 380,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0183",
+    "date": "2024-10-29",
+    "amount": 211,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0184",
+    "date": "2024-10-29",
+    "amount": 689,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0185",
+    "date": "2024-10-30",
+    "amount": 413,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0186",
+    "date": "2024-10-30",
+    "amount": 133,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0187",
+    "date": "2024-10-30",
+    "amount": 923,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0188",
+    "date": "2024-10-30",
+    "amount": 588,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0189",
+    "date": "2024-10-30",
+    "amount": 276,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0190",
+    "date": "2024-10-31",
+    "amount": 227,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0191",
+    "date": "2024-10-31",
+    "amount": 100,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0192",
+    "date": "2024-10-31",
+    "amount": 419,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0193",
+    "date": "2024-11-01",
+    "amount": 533,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0194",
+    "date": "2024-11-02",
+    "amount": 112,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0195",
+    "date": "2024-11-02",
+    "amount": 525,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0196",
+    "date": "2024-11-02",
+    "amount": 37,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0197",
+    "date": "2024-11-03",
+    "amount": 1050,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0198",
+    "date": "2024-11-03",
+    "amount": 491,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0199",
+    "date": "2024-11-04",
+    "amount": 335,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0200",
+    "date": "2024-11-04",
+    "amount": 29,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0201",
+    "date": "2024-11-04",
+    "amount": 319,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0202",
+    "date": "2024-11-05",
+    "amount": 1659,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0203",
+    "date": "2024-11-05",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0204",
+    "date": "2024-11-06",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0205",
+    "date": "2024-11-06",
+    "amount": 44,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0206",
+    "date": "2024-11-06",
+    "amount": 870,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0207",
+    "date": "2024-11-07",
+    "amount": 428,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0208",
+    "date": "2024-11-07",
+    "amount": 418,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0209",
+    "date": "2024-11-07",
+    "amount": 281,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0210",
+    "date": "2024-11-07",
+    "amount": 725,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0211",
+    "date": "2024-11-08",
+    "amount": 228,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0212",
+    "date": "2024-11-08",
+    "amount": 28,
+    "narration": "UPI/CHAI-NASHTA-DABELI",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0213",
+    "date": "2024-11-08",
+    "amount": 432,
+    "narration": "UPI/PETROL-PUMP-BPCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0214",
+    "date": "2024-11-09",
+    "amount": 260,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0215",
+    "date": "2024-11-09",
+    "amount": 907,
+    "narration": "SWIGGY-PAYOUT-WEEKLY-SETTLEMENT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0216",
+    "date": "2024-11-09",
+    "amount": 259,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0217",
+    "date": "2024-11-09",
+    "amount": 502,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0218",
+    "date": "2024-11-10",
+    "amount": 177,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0219",
+    "date": "2024-11-10",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0220",
+    "date": "2024-11-10",
+    "amount": 68,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0221",
+    "date": "2024-11-10",
+    "amount": 264,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0222",
+    "date": "2024-11-11",
+    "amount": 454,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0223",
+    "date": "2024-11-11",
+    "amount": 1200,
+    "narration": "UPI/INSURANCE-PREMIUM-LIC",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0224",
+    "date": "2024-11-11",
+    "amount": 65,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0225",
+    "date": "2024-11-12",
+    "amount": 435,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0226",
+    "date": "2024-11-12",
+    "amount": 442,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0227",
+    "date": "2024-11-12",
+    "amount": 1104,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0228",
+    "date": "2024-11-13",
+    "amount": 421,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0229",
+    "date": "2024-11-13",
+    "amount": 392,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0230",
+    "date": "2024-11-14",
+    "amount": 204,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0231",
+    "date": "2024-11-14",
+    "amount": 61,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0232",
+    "date": "2024-11-15",
+    "amount": 69,
+    "narration": "UPI/LUNCH-DABBA-WALA",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0233",
+    "date": "2024-11-16",
+    "amount": 48,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0234",
+    "date": "2024-11-16",
+    "amount": 100,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0235",
+    "date": "2024-11-17",
+    "amount": 203,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0236",
+    "date": "2024-11-17",
+    "amount": 252,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0237",
+    "date": "2024-11-17",
+    "amount": 220,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0238",
+    "date": "2024-11-17",
+    "amount": 208,
+    "narration": "UPI/MOBILE-RECHARGE-JIO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0239",
+    "date": "2024-11-17",
+    "amount": 434,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0240",
+    "date": "2024-11-18",
+    "amount": 523,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0241",
+    "date": "2024-11-18",
+    "amount": 88,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0242",
+    "date": "2024-11-18",
+    "amount": 494,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0243",
+    "date": "2024-11-19",
+    "amount": 14,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0244",
+    "date": "2024-11-20",
+    "amount": 454,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0245",
+    "date": "2024-11-20",
+    "amount": 154,
+    "narration": "ZOMATO-SURGE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0246",
+    "date": "2024-11-21",
+    "amount": 446,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0247",
+    "date": "2024-11-21",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0248",
+    "date": "2024-11-21",
+    "amount": 1727,
+    "narration": "ATM/CASH-WITHDRAWAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0249",
+    "date": "2024-11-22",
+    "amount": 318,
+    "narration": "BLINKIT-DELIVERY-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0250",
+    "date": "2024-11-22",
+    "amount": 208,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0251",
+    "date": "2024-11-22",
+    "amount": 32,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0252",
+    "date": "2024-11-23",
+    "amount": 1833,
+    "narration": "ZEPTO-RIDER-WEEKLY-PAY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0253",
+    "date": "2024-11-23",
+    "amount": 343,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0254",
+    "date": "2024-11-23",
+    "amount": 350,
+    "narration": "UPI/GROCERY-DMART-STORE",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0255",
+    "date": "2024-11-23",
+    "amount": 415,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0256",
+    "date": "2024-11-23",
+    "amount": 683,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0257",
+    "date": "2024-11-24",
+    "amount": 482,
+    "narration": "ZOMATO-PARTNER-INCENTIVE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0258",
+    "date": "2024-11-24",
+    "amount": 493,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0259",
+    "date": "2024-11-24",
+    "amount": 47,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0260",
+    "date": "2024-11-24",
+    "amount": 500,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0261",
+    "date": "2024-11-25",
+    "amount": 247,
+    "narration": "SWIGGY-PAYOUT-DAILY-TRIP",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0262",
+    "date": "2024-11-25",
+    "amount": 457,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0263",
+    "date": "2024-11-25",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0264",
+    "date": "2024-11-25",
+    "amount": 175,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0265",
+    "date": "2024-11-26",
+    "amount": 800,
+    "narration": "UPI/SCHOOL-FEES-CHILD",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0266",
+    "date": "2024-11-26",
+    "amount": 940,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0267",
+    "date": "2024-11-27",
+    "amount": 422,
+    "narration": "BLINKIT-INCENTIVE-PAYOUT",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0268",
+    "date": "2024-11-27",
+    "amount": 89,
+    "narration": "UPI/MEDICINES-APOLLO",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0269",
+    "date": "2024-11-27",
+    "amount": 12,
+    "narration": "UPI/TEMPLE-DONATION",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0270",
+    "date": "2024-11-28",
+    "amount": 651,
+    "narration": "UPI/ELECTRICITY-MSEDCL",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0271",
+    "date": "2024-11-28",
+    "amount": 380,
+    "narration": "UPI/WATER-TANKER",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0272",
+    "date": "2024-11-29",
+    "amount": 321,
+    "narration": "ZOMATO-PAYOUT-ORDER-DELIVERY",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0273",
+    "date": "2024-11-29",
+    "amount": 657,
+    "narration": "ZEPTO-PERFORMANCE-BONUS",
+    "type": "CREDIT"
+  },
+  {
+    "id": "TXN0274",
+    "date": "2024-11-29",
+    "amount": 79,
+    "narration": "UPI/STREET-FOOD-VENDOR",
+    "type": "DEBIT"
+  },
+  {
+    "id": "TXN0275",
+    "date": "2024-11-29",
+    "amount": 571,
+    "narration": "UPI/BIKE-SERVICING-LOCAL",
+    "type": "DEBIT"
+  }
+]
